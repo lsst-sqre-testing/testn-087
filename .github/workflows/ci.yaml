@@ -31,4 +31,5 @@ jobs:
           LTD_PASSWORD: ${{ secrets.LTD_PASSWORD }}
           LTD_USERNAME: ${{ secrets.LTD_USERNAME }}
         run: |
+          echo $GITHUB_RUN_NUMBER
           lander --upload --pdf TESTN-087.pdf --lsstdoc TESTN-087.tex --ltd-product testn-087
